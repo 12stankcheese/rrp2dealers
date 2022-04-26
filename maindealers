@@ -3,32 +3,42 @@
 
 -- Instances:
 
-local SuperDuper = Instance.new("ScreenGui")
+local PingGuiV2 = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
-local TextButton_2 = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local Frame2 = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local PingWingGui = Instance.new("TextLabel")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
 
-SuperDuper.Name = "SuperDuper!"
-SuperDuper.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-SuperDuper.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+PingGuiV2.Name = "PingGuiV2"
+PingGuiV2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PingGuiV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+PingGuiV2.ResetOnSpawn = false
 
-Frame.Parent = SuperDuper
-Frame.BackgroundColor3 = Color3.fromRGB(181, 180, 180)
-Frame.Position = UDim2.new(0.01039501, 0, 0.59065932, 0)
-Frame.Size = UDim2.new(0.247609153, 0, 0.344505608, 0)
+Frame.Parent = PingGuiV2
+Frame.BackgroundColor3 = Color3.fromRGB(84, 12, 89)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.430489719, 0, 0.382402718, 0)
+Frame.Size = UDim2.new(0.137914702, 0, 0.231979728, 0)
 
 TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(188, 58, 19)
-TextButton.Position = UDim2.new(0.340616941, 0, 0.219842106, 0)
-TextButton.Size = UDim2.new(0.314910024, 0, 0.248026997, 0)
+TextButton.BackgroundColor3 = Color3.fromRGB(51, 38, 156)
+TextButton.Position = UDim2.new(0.16036655, 0, 0.342815429, 0)
+TextButton.Size = UDim2.new(0, 120, 0, 45)
 TextButton.Font = Enum.Font.Bangers
-TextButton.Text = "Dealer1"
+TextButton.Text = "Login (Whitelisted.)"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
@@ -38,10 +48,27 @@ TextButton.TextWrapped = true
 
 UICorner.Parent = TextButton
 
-TextButton_2.Parent = Frame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(48, 63, 193)
-TextButton_2.Position = UDim2.new(0.340616941, 0, 0.614430547, 0)
-TextButton_2.Size = UDim2.new(0.314910024, 0, 0.248026997, 0)
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(-3.12142038, 0, -1.65796983, 0)
+Frame_2.Size = UDim2.new(100, 0, 100, 0)
+Frame_2.Visible = false
+
+Frame2.Name = "Frame2"
+Frame2.Parent = PingGuiV2
+Frame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame2.BackgroundTransparency = 0.500
+Frame2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame2.Position = UDim2.new(0.789099514, 0, 0.463620961, 0)
+Frame2.Size = UDim2.new(0.187677726, 0, 0.460406095, 0)
+Frame2.Visible = false
+
+UICorner_2.Parent = Frame2
+
+TextButton_2.Parent = Frame2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(16, 35, 153)
+TextButton_2.Position = UDim2.new(0.0420875363, 0, 0.467699498, 0)
+TextButton_2.Size = UDim2.new(0.419865191, 0, 0.100000009, 0)
 TextButton_2.Font = Enum.Font.Bangers
 TextButton_2.Text = "Dealer2"
 TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -51,59 +78,97 @@ TextButton_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextStrokeTransparency = 0.000
 TextButton_2.TextWrapped = true
 
-UICorner_2.Parent = TextButton_2
+UICorner_3.Parent = TextButton_2
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Size = UDim2.new(0.999999881, 0, 0.173280686, 0)
-TextLabel.Font = Enum.Font.Bangers
-TextLabel.Text = "RRP Dealer teleport script"
-TextLabel.TextColor3 = Color3.fromRGB(6, 5, 5)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextStrokeColor3 = Color3.fromRGB(250, 250, 250)
-TextLabel.TextStrokeTransparency = 0.000
-TextLabel.TextWrapped = true
+TextButton_3.Parent = Frame2
+TextButton_3.BackgroundColor3 = Color3.fromRGB(115, 255, 105)
+TextButton_3.Position = UDim2.new(0.530303001, 0, 0.286465973, 0)
+TextButton_3.Size = UDim2.new(0.419865191, 0, 0.100000009, 0)
+TextButton_3.Font = Enum.Font.Bangers
+TextButton_3.Text = "PkDealer"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextStrokeTransparency = 0.000
+TextButton_3.TextWrapped = true
 
-UICorner_3.Parent = Frame
+UICorner_4.Parent = TextButton_3
+
+TextButton_4.Parent = Frame2
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 70, 38)
+TextButton_4.Position = UDim2.new(0.0420875363, 0, 0.289389044, 0)
+TextButton_4.Size = UDim2.new(0.419865191, 0, 0.100000009, 0)
+TextButton_4.Font = Enum.Font.Bangers
+TextButton_4.Text = "Dealer1"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextStrokeTransparency = 0.000
+TextButton_4.TextWrapped = true
+
+UICorner_5.Parent = TextButton_4
+
+PingWingGui.Name = "PingWing Gui"
+PingWingGui.Parent = Frame2
+PingWingGui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PingWingGui.BackgroundTransparency = 1.000
+PingWingGui.Size = UDim2.new(0.999999464, 0, 0.100000009, 0)
+PingWingGui.Font = Enum.Font.Bangers
+PingWingGui.Text = "PingWing Gui"
+PingWingGui.TextColor3 = Color3.fromRGB(0, 0, 0)
+PingWingGui.TextScaled = true
+PingWingGui.TextSize = 14.000
+PingWingGui.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+PingWingGui.TextStrokeTransparency = 0.000
+PingWingGui.TextWrapped = true
+
+TextButton_5.Parent = PingGuiV2
+TextButton_5.BackgroundColor3 = Color3.fromRGB(16, 35, 153)
+TextButton_5.Position = UDim2.new(0.865152299, 0, 0.944856882, 0)
+TextButton_5.Size = UDim2.new(0.12839599, 0, 0.0543147326, 0)
+TextButton_5.Visible = false
+TextButton_5.Font = Enum.Font.Bangers
+TextButton_5.Text = "Open/Hide"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextStrokeTransparency = 0.000
+TextButton_5.TextWrapped = true
+
+UICorner_6.Parent = TextButton_5
 
 -- Scripts:
 
-local function TLUSIO_fake_script() -- TextButton.secondScript 
+local function LDDY_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local db = true
 	local player = game.Players.LocalPlayer
 	local delay = 3
+	local button = script.Parent
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if db == true and game.Workspace.Dealers:FindFirstChild("Dealer") then
-			db = false
-			player.Character.HumanoidRootPart.CFrame = game.Workspace.Dealers.Dealer.Head.CFrame * CFrame.new(0, 3, 0)
-			for i = delay, 1, -1 do
-				script.Parent.Text = i
-				wait(1)
-			end
-			script.Parent.Text = "Dealer1"
-			db = true
-		elseif db == true and not game.Workspace.Dealers:FindFirstChild("Dealer") then
-			script.Parent.Text = "Dealer Not Found"
-			db = false
-			wait(1)
-			script.Parent.Text = "Dealer1"
-			db = true
+		if player.Name == "IndianRedPing" or player.Name == "glizzylou" or player.Name == "PeptoBismoII" then
+			button.Parent.Parent.TextButton.Visible = true
+			script.Parent:Destroy()
+		else
+			button.Text = "LOL NIGGER NOT WHITELISTED"
+			wait(2)
+			script.Parent.Parent.Frame.Visible = true
 		end
 	end)
 end
-coroutine.wrap(TLUSIO_fake_script)()
-local function WQZSY_fake_script() -- TextButton_2.secondScript 
+coroutine.wrap(LDDY_fake_script)()
+local function VRHN_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local db = true
 	local player = game.Players.LocalPlayer
-	
 	local delay = 3
+	
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		if db == true and game.Workspace.Dealers:FindFirstChild("Dealer2") then
@@ -124,4 +189,79 @@ local function WQZSY_fake_script() -- TextButton_2.secondScript
 		end
 	end)
 end
-coroutine.wrap(WQZSY_fake_script)()
+coroutine.wrap(VRHN_fake_script)()
+local function UBVEG_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local db = true
+	local player = game.Players.LocalPlayer
+	local delay = 3
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if db == true and game.Workspace.ArabianDeli:FindFirstChild("MohammedArabDeli") then
+			db = false
+			player.Character.HumanoidRootPart.CFrame = game.Workspace.ArabianDeli.MohammedArabDeli.Head.CFrame * CFrame.new(0, 3, 0)
+			for i = delay, 1, -1 do
+				script.Parent.Text = i
+				wait(1)
+			end
+			script.Parent.Text = "PkDealer"
+			db = true
+		elseif db == true and not game.Workspace.ArabianDeli:FindFirstChild("MohammedArabDeli") then
+			script.Parent.Text = "Dealer Not Found"
+			db = false
+			wait(1)
+			script.Parent.Text = "PkDealer"
+			db = true
+		end
+	end)
+end
+coroutine.wrap(UBVEG_fake_script)()
+local function SJZUGX_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local db = true
+	local player = game.Players.LocalPlayer
+	local delay = 3
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if db == true and game.Workspace.Dealers:FindFirstChild("Dealer") then
+			db = false
+			player.Character.HumanoidRootPart.CFrame = game.Workspace.Dealers.Dealer.Head.CFrame * CFrame.new(0, 3, 0)
+			for i = delay, 1, -1 do
+				script.Parent.Text = i
+				wait(1)
+			end
+			script.Parent.Text = "Dealer1"
+			db = true
+		elseif db == true and not game.Workspace.Dealers:FindFirstChild("Dealer") then
+			script.Parent.Text = "Dealer Not Found"
+			db = false
+			wait(1)
+			script.Parent.Text = "Dealer1"
+			db = true
+		end
+	end)
+end
+coroutine.wrap(SJZUGX_fake_script)()
+local function GHZAEY_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local db = true
+	local player = game.Players.LocalPlayer
+	local delay = 3
+	local button = script.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if db == true then
+			button.Parent.Frame2.Visible = true
+			db = false
+		elseif db == false then
+			button.Parent.Frame2.Visible = false
+			db = true
+		end
+	end)
+end
+coroutine.wrap(GHZAEY_fake_script)()
